@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+int powerof4(int m){
+  while(m!=1){
+    
+      if(m%4!=0){
+        return0
+      }
+      m=m/4;
+  }
+  return 1;
+}
+int main(){
+  int m;
+  cin>>m;
+  (powerof4(m)==1)? cout<<"Power of 4":cout<<"Not Power of 4;
+  
+}
+
+///////////Output//////////////
+
+16
+Power of 4
+14 
+Not Power of 4
+//////////////////////////////
