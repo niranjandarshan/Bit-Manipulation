@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int num1,num2,num3,i=0;
+  
+  // Input three Numbers
+  cin>>num1>>num2>>num3;
+  
+  //Loop till there is minimum number among three
+  
+  while(num1 && num2 && num3){
+        num1--;
+        num2--;
+        num3--;
+        i++;
+  
+  }
+  cout<< "The MINImum among three is "<< i;
+
+}
+
+//////// Output//////////////
+
+15 12 10
+The Minimum among three is 10
+
+//////////////////////////////
