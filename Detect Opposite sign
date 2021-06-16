@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int n,m;
+  //Input two number for check
+  cin>>n>>m;
+  
+  // if xor of both number is less than zero then the number have opposite sign
+  //If not then it is of  Same sign
+  //as xor of positive signed number and negative signed number are always negative like 2^-2 gives -4
+  
+  if((m^n)<0){
+    cout<<"Opposite Sign";  
+  }
+  else{
+    cout<<"Same Sign";
+  }
+}
