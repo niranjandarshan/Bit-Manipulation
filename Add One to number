@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int num,carry=1;
+  cin>>num;
+  
+  while(m&carry){
+  
+    m=m^carry;
+    carry<<=1;
+    
+  }
+  m=m^carry;
+  cout<<"After Adding one"<<m;
+  
+}
+
+///////Output///////
+
+5
+ After Adding one 6
+ /////////////////////
