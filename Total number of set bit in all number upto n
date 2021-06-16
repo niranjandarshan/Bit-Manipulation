@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+  int m,i,p,count=0;
+  
+  cin>>m;
+  for(i=0;i<=m;i++){
+    p=i;
+    while(p>=1){
+      p=p &(p-1);
+      count++;
+    }
+  }
+    cout<<"Total number of Set bit of number till"<<m<<"are"<<count<<endl;
+}
+
+
+////////////  OutPut//////////
+
+17
+Total number of set bit of number till 17 are 35
