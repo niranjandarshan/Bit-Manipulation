@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int num,next;
+  cin>>num;
+  
+  // Checking for the rightmostsetbit
+  
+  int rightmostset= num &-(num);
+  
+  //Check for the left most set Bit
+  
+  int leftmost=num+rightmostset;
+  
+  //making the pattern using same number of bit we xor and divide to check not to exceed set bit number
+  
+  int pattern=(num^leftmost)/rightmostset;
+  
+  // shifting the pattern
+  
+  pattern=patter>>2;
+  
+  //Now for next pattern we or the leftmost and pattern
+  
+  next=pattern | leftmost;
+  
+  cout<<next;
+}
+
+///////////////Output///////////////
+
+156
+163
+////////////////////////////////////
