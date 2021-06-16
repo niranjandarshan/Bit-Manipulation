@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+  int num1,num2,carry;
+  //Input number1 and number 2
+  cin>>num1>>num2;
+  
+  //Till the second number dont have 0 loop till
+  while(num2!=0){
+      
+      //It may generate some carry then and of num1 and num2 gives carry
+      carry=num1 & num2;
+      
+      //Xoring num1 and num2 and storing in num1 state that if there is 0 0 then 0  if 0 1 then 1 so on
+      num1=num1 ^ num2;
+      
+      // shifting carry to the num2 for further calculation
+      num2=carry<<1;
+  }
+  cout<<"The  sum of two number is"<<num1;
+
+}
+
+
+/////////////////Output///////////////
+
+  6 4
+ The sum of two number is 10
+ 
+ ////////////////////////////
