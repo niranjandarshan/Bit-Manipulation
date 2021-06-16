@@ -1,0 +1,17 @@
+#include<iostram>
+using namespace std;
+
+int main(){
+  int m,mask;
+  cin>>m;
+  mask=m>>31;
+  int result=(mask+n)^mask;
+  cout<<result;
+ }
+ 
+ 
+ /////////Output//////////
+ -100
+ 100
+ 4
+ 4
